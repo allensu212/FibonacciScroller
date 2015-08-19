@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		BE7BF8821B85483A008CF71C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8811B85483A008CF71C /* main.m */; };
 		BE7BF8851B85483A008CF71C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8841B85483A008CF71C /* AppDelegate.m */; };
-		BE7BF8881B85483A008CF71C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8871B85483A008CF71C /* ViewController.m */; };
+		BE7BF8881B85483A008CF71C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8871B85483A008CF71C /* MasterViewController.m */; };
 		BE7BF88B1B85483A008CF71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF8891B85483A008CF71C /* Main.storyboard */; };
 		BE7BF88D1B85483A008CF71C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF88C1B85483A008CF71C /* Images.xcassets */; };
 		BE7BF8901B85483A008CF71C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF88E1B85483A008CF71C /* LaunchScreen.xib */; };
 		BE7BF89C1B85483B008CF71C /* FibonacciScrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF89B1B85483B008CF71C /* FibonacciScrollerTests.m */; };
+		BE7BF8AA1B854A3A008CF71C /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */; };
+		BE7BF8AD1B854A65008CF71C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8AC1B854A65008CF71C /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		BE7BF8811B85483A008CF71C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE7BF8831B85483A008CF71C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE7BF8841B85483A008CF71C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE7BF8861B85483A008CF71C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BE7BF8871B85483A008CF71C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE7BF8861B85483A008CF71C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		BE7BF8871B85483A008CF71C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		BE7BF88A1B85483A008CF71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE7BF88C1B85483A008CF71C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE7BF88F1B85483A008CF71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BE7BF8951B85483B008CF71C /* FibonacciScrollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibonacciScrollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7BF89A1B85483B008CF71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7BF89B1B85483B008CF71C /* FibonacciScrollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibonacciScrollerTests.m; sourceTree = "<group>"; };
+		BE7BF8A81B854A3A008CF71C /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		BE7BF8AB1B854A65008CF71C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BE7BF8AC1B854A65008CF71C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +89,10 @@
 			children = (
 				BE7BF8831B85483A008CF71C /* AppDelegate.h */,
 				BE7BF8841B85483A008CF71C /* AppDelegate.m */,
-				BE7BF8861B85483A008CF71C /* ViewController.h */,
-				BE7BF8871B85483A008CF71C /* ViewController.m */,
 				BE7BF8891B85483A008CF71C /* Main.storyboard */,
+				BE7BF8A61B8549D9008CF71C /* Model */,
+				BE7BF8A51B8549CD008CF71C /* Controller */,
+				BE7BF8A71B8549E2008CF71C /* View */,
 				BE7BF88C1B85483A008CF71C /* Images.xcassets */,
 				BE7BF88E1B85483A008CF71C /* LaunchScreen.xib */,
 				BE7BF87F1B85483A008CF71C /* Supporting Files */,
@@ -117,6 +124,33 @@
 				BE7BF89A1B85483B008CF71C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE7BF8A51B8549CD008CF71C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE7BF8861B85483A008CF71C /* MasterViewController.h */,
+				BE7BF8871B85483A008CF71C /* MasterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BE7BF8A61B8549D9008CF71C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE7BF8AB1B854A65008CF71C /* Constants.h */,
+				BE7BF8AC1B854A65008CF71C /* Constants.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BE7BF8A71B8549E2008CF71C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE7BF8A81B854A3A008CF71C /* CustomTableViewCell.h */,
+				BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE7BF8881B85483A008CF71C /* ViewController.m in Sources */,
+				BE7BF8AD1B854A65008CF71C /* Constants.m in Sources */,
+				BE7BF8881B85483A008CF71C /* MasterViewController.m in Sources */,
 				BE7BF8851B85483A008CF71C /* AppDelegate.m in Sources */,
+				BE7BF8AA1B854A3A008CF71C /* CustomTableViewCell.m in Sources */,
 				BE7BF8821B85483A008CF71C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
