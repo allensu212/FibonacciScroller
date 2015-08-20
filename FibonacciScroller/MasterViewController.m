@@ -13,7 +13,6 @@
 #import "NumberObject.h"
 
 @interface MasterViewController () <UITableViewDataSource, UITableViewDelegate, FibonacciEngineDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) FibonacciEngine * fibonacciEngine;
 @property (nonatomic, strong) NSArray * numberList;
 @property (nonatomic, strong) NumberTableViewCell * sizingCell;

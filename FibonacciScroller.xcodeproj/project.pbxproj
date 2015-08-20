@@ -14,7 +14,6 @@
 		BE7BF88D1B85483A008CF71C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF88C1B85483A008CF71C /* Images.xcassets */; };
 		BE7BF8901B85483A008CF71C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF88E1B85483A008CF71C /* LaunchScreen.xib */; };
 		BE7BF89C1B85483B008CF71C /* FibonacciScrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF89B1B85483B008CF71C /* FibonacciScrollerTests.m */; };
-		BE7BF8AA1B854A3A008CF71C /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */; };
 		BE7BF8AD1B854A65008CF71C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8AC1B854A65008CF71C /* Constants.m */; };
 		BE7BF90A1B854D8B008CF71C /* External in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF9091B854D8B008CF71C /* External */; };
 		BE7BF90D1B854D9B008CF71C /* NumberObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF90C1B854D9B008CF71C /* NumberObject.m */; };
@@ -22,6 +21,7 @@
 		BE7BF9161B8553FE008CF71C /* libBigInteger-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7BF9151B8553FE008CF71C /* libBigInteger-iOS.a */; };
 		BE7BF9191B85571C008CF71C /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF9181B85571C008CF71C /* BaseTableViewCell.m */; };
 		BE7BF91C1B85575B008CF71C /* NumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF91B1B85575B008CF71C /* NumberTableViewCell.m */; };
+		BE7BF9201B855B2B008CF71C /* NumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF91F1B855B2B008CF71C /* NumberTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,6 @@
 		BE7BF8951B85483B008CF71C /* FibonacciScrollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibonacciScrollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7BF89A1B85483B008CF71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7BF89B1B85483B008CF71C /* FibonacciScrollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibonacciScrollerTests.m; sourceTree = "<group>"; };
-		BE7BF8A81B854A3A008CF71C /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
-		BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		BE7BF8AB1B854A65008CF71C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		BE7BF8AC1B854A65008CF71C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		BE7BF9091B854D8B008CF71C /* External */ = {isa = PBXFileReference; lastKnownFileType = folder; path = External; sourceTree = "<group>"; };
@@ -63,6 +61,7 @@
 		BE7BF9181B85571C008CF71C /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		BE7BF91A1B85575B008CF71C /* NumberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberTableViewCell.h; sourceTree = "<group>"; };
 		BE7BF91B1B85575B008CF71C /* NumberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberTableViewCell.m; sourceTree = "<group>"; };
+		BE7BF91F1B855B2B008CF71C /* NumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +173,7 @@
 				BE7BF9181B85571C008CF71C /* BaseTableViewCell.m */,
 				BE7BF91A1B85575B008CF71C /* NumberTableViewCell.h */,
 				BE7BF91B1B85575B008CF71C /* NumberTableViewCell.m */,
-				BE7BF8A81B854A3A008CF71C /* CustomTableViewCell.h */,
-				BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */,
+				BE7BF91F1B855B2B008CF71C /* NumberTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -274,6 +272,7 @@
 				BE7BF8901B85483A008CF71C /* LaunchScreen.xib in Resources */,
 				BE7BF88D1B85483A008CF71C /* Images.xcassets in Resources */,
 				BE7BF90A1B854D8B008CF71C /* External in Resources */,
+				BE7BF9201B855B2B008CF71C /* NumberTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +296,6 @@
 				BE7BF8881B85483A008CF71C /* MasterViewController.m in Sources */,
 				BE7BF91C1B85575B008CF71C /* NumberTableViewCell.m in Sources */,
 				BE7BF8851B85483A008CF71C /* AppDelegate.m in Sources */,
-				BE7BF8AA1B854A3A008CF71C /* CustomTableViewCell.m in Sources */,
 				BE7BF9121B854E5C008CF71C /* FibonacciEngine.m in Sources */,
 				BE7BF8821B85483A008CF71C /* main.m in Sources */,
 			);
