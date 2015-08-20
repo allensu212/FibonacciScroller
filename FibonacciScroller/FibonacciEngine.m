@@ -25,7 +25,7 @@
 - (instancetype)init {
     if ((self = [super init])) {
         _state = FibonacciEngineStateInitial;
-        _serialQueue = dispatch_queue_create("com.akilash.FibonacciGenerator.serial", NULL);
+        _serialQueue = dispatch_queue_create("serialQueue", NULL);
         _currentOffset = 0;
         _fullList = [NSArray new];
         _lastPagedList = [NSArray new];
