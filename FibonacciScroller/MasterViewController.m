@@ -118,13 +118,32 @@
 #pragma mark - UITableViewDelegate
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return CELL_HEIGHT;
+    NumberObject * numberItem = [self.numberList objectAtIndex:indexPath.row];
+    [self.sizingCell configureCellWithNumberObject:numberItem];
+    CGFloat height = [self.sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + LABEL_SPACER;
+    return height;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [NumberTableViewCell cellHeight];
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self checkIfPreloadIsNeeded];
 }
 
 #pragma mark - FibonacciEngineDelegate
 
 -(void)onFibonacciNumbersGenerated:(NSArray *)list{
+    if (![NSThread isMainThread]) {
+        NSAssert(NO, @"This method MUST be called on the main thread");
+        return;
+    }
     
+    self.numberList = [self.numberList arrayByAddingObjectsFromArray:list];
+    [self.tableView reloadData];
 }
 
 @end
