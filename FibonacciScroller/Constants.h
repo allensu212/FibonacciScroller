@@ -12,6 +12,7 @@
 
 #define CELL_HEIGHT 64.0f
 #define FONT_MAIN @"Futura"
+#define NAVIGATION_BAR_TITLE @"Fibonacci Scroller"
 #define PRELOAD_THRESHOLD 50
 #define PAGED_SET_THRESHOLD 50
 #define PRELOAD_THRESHOLD_CONTROLLER 10

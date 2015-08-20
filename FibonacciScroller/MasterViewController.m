@@ -11,6 +11,7 @@
 #import "NumberTableViewCell.h"
 #import "FibonacciEngine.h"
 #import "NumberObject.h"
+#import "NavigationBarLabel.h"
 
 @interface MasterViewController () <UITableViewDataSource, UITableViewDelegate, FibonacciEngineDelegate>
 @property (nonatomic, strong) FibonacciEngine * fibonacciEngine;
@@ -28,6 +29,9 @@
     self.numberList = [NSArray new];
     self.fibonacciEngine = [[FibonacciEngine alloc]init];
     self.fibonacciEngine.delegate = self;
+    
+    NavigationBarLabel *label = [[NavigationBarLabel alloc]initWithText:NAVIGATION_BAR_TITLE];
+    self.navigationItem.titleView = label;
     
     [self configureSizingCell];
 }

@@ -22,6 +22,7 @@
 		BE7BF9191B85571C008CF71C /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF9181B85571C008CF71C /* BaseTableViewCell.m */; };
 		BE7BF91C1B85575B008CF71C /* NumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF91B1B85575B008CF71C /* NumberTableViewCell.m */; };
 		BE7BF9201B855B2B008CF71C /* NumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF91F1B855B2B008CF71C /* NumberTableViewCell.xib */; };
+		BE7BF9231B85616C008CF71C /* NavigationBarLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF9221B85616C008CF71C /* NavigationBarLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		BE7BF91A1B85575B008CF71C /* NumberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberTableViewCell.h; sourceTree = "<group>"; };
 		BE7BF91B1B85575B008CF71C /* NumberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberTableViewCell.m; sourceTree = "<group>"; };
 		BE7BF91F1B855B2B008CF71C /* NumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberTableViewCell.xib; sourceTree = "<group>"; };
+		BE7BF9211B85616C008CF71C /* NavigationBarLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarLabel.h; sourceTree = "<group>"; };
+		BE7BF9221B85616C008CF71C /* NavigationBarLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				BE7BF91A1B85575B008CF71C /* NumberTableViewCell.h */,
 				BE7BF91B1B85575B008CF71C /* NumberTableViewCell.m */,
 				BE7BF91F1B855B2B008CF71C /* NumberTableViewCell.xib */,
+				BE7BF9211B85616C008CF71C /* NavigationBarLabel.h */,
+				BE7BF9221B85616C008CF71C /* NavigationBarLabel.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				BE7BF91C1B85575B008CF71C /* NumberTableViewCell.m in Sources */,
 				BE7BF8851B85483A008CF71C /* AppDelegate.m in Sources */,
 				BE7BF9121B854E5C008CF71C /* FibonacciEngine.m in Sources */,
+				BE7BF9231B85616C008CF71C /* NavigationBarLabel.m in Sources */,
 				BE7BF8821B85483A008CF71C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
