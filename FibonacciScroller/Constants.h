@@ -11,7 +11,6 @@
 @interface Constants : NSObject
 
 #define CELL_HEIGHT 64.0f
-#define CELL_IDENTIFIER @"customCell"
 #define FONT_MAIN @"Futura"
 #define PRELOAD_THRESHOLD 50
 #define PAGED_SET_THRESHOLD 50

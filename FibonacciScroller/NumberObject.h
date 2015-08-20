@@ -11,7 +11,9 @@
 @class BigInteger;
 
 @interface NumberObject : NSObject
+
 @property (nonatomic, strong, readonly) BigInteger *bigInteger;
 - (instancetype)initWithBigInteger:(BigInteger *)bigInteger;
 - (NSString *)stringValueForBase10;
+
 @end

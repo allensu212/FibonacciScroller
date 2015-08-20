@@ -16,7 +16,6 @@
 @implementation NumberObject
 
 -(instancetype)initWithBigInteger:(BigInteger *)bigInteger {
-    
     if (self = [super init]) {
         _bigInteger = bigInteger;
     }

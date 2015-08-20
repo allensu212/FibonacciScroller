@@ -55,6 +55,7 @@
 }
 
 -(void)configureSizingCell{
+    
     self.sizingCell = [NumberTableViewCell cellForTableView:self.tableView];
     self.sizingCell.userInteractionEnabled = NO;
     self.sizingCell.hidden = YES;
@@ -62,6 +63,7 @@
 }
 
 -(void)configureFooter{
+    
     UIActivityIndicatorView * activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     activityIndicator.translatesAutoresizingMaskIntoConstraints = NO;
     [activityIndicator startAnimating];
