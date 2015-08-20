@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomTableViewCell : UITableViewCell
+@class NumberObject;
 
+@interface CustomTableViewCell : UITableViewCell
+@property (nonatomic, strong, readonly) NumberObject *numberObject;
+- (void)configureCellWithNumberObject:(NumberObject *)numberObject;
 @end

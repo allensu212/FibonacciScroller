@@ -16,6 +16,10 @@
 		BE7BF89C1B85483B008CF71C /* FibonacciScrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF89B1B85483B008CF71C /* FibonacciScrollerTests.m */; };
 		BE7BF8AA1B854A3A008CF71C /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */; };
 		BE7BF8AD1B854A65008CF71C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF8AC1B854A65008CF71C /* Constants.m */; };
+		BE7BF90A1B854D8B008CF71C /* External in Resources */ = {isa = PBXBuildFile; fileRef = BE7BF9091B854D8B008CF71C /* External */; };
+		BE7BF90D1B854D9B008CF71C /* NumberObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF90C1B854D9B008CF71C /* NumberObject.m */; };
+		BE7BF9121B854E5C008CF71C /* FibonacciEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7BF9111B854E5C008CF71C /* FibonacciEngine.m */; };
+		BE7BF9161B8553FE008CF71C /* libBigInteger-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7BF9151B8553FE008CF71C /* libBigInteger-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,13 @@
 		BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		BE7BF8AB1B854A65008CF71C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		BE7BF8AC1B854A65008CF71C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		BE7BF9091B854D8B008CF71C /* External */ = {isa = PBXFileReference; lastKnownFileType = folder; path = External; sourceTree = "<group>"; };
+		BE7BF90B1B854D9B008CF71C /* NumberObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberObject.h; sourceTree = "<group>"; };
+		BE7BF90C1B854D9B008CF71C /* NumberObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberObject.m; sourceTree = "<group>"; };
+		BE7BF90E1B854DB3008CF71C /* BigInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BigInteger.h; path = External/BigInteger.h; sourceTree = "<group>"; };
+		BE7BF9101B854E5C008CF71C /* FibonacciEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FibonacciEngine.h; sourceTree = "<group>"; };
+		BE7BF9111B854E5C008CF71C /* FibonacciEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibonacciEngine.m; sourceTree = "<group>"; };
+		BE7BF9151B8553FE008CF71C /* libBigInteger-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libBigInteger-iOS.a"; path = "External/libBigInteger-iOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7BF9161B8553FE008CF71C /* libBigInteger-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +99,7 @@
 		BE7BF87E1B85483A008CF71C /* FibonacciScroller */ = {
 			isa = PBXGroup;
 			children = (
+				BE7BF90F1B854DBD008CF71C /* Framework */,
 				BE7BF8831B85483A008CF71C /* AppDelegate.h */,
 				BE7BF8841B85483A008CF71C /* AppDelegate.m */,
 				BE7BF8891B85483A008CF71C /* Main.storyboard */,
@@ -140,6 +153,10 @@
 			children = (
 				BE7BF8AB1B854A65008CF71C /* Constants.h */,
 				BE7BF8AC1B854A65008CF71C /* Constants.m */,
+				BE7BF90B1B854D9B008CF71C /* NumberObject.h */,
+				BE7BF90C1B854D9B008CF71C /* NumberObject.m */,
+				BE7BF9101B854E5C008CF71C /* FibonacciEngine.h */,
+				BE7BF9111B854E5C008CF71C /* FibonacciEngine.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -151,6 +168,16 @@
 				BE7BF8A91B854A3A008CF71C /* CustomTableViewCell.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BE7BF90F1B854DBD008CF71C /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				BE7BF9151B8553FE008CF71C /* libBigInteger-iOS.a */,
+				BE7BF9091B854D8B008CF71C /* External */,
+				BE7BF90E1B854DB3008CF71C /* BigInteger.h */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +263,7 @@
 				BE7BF88B1B85483A008CF71C /* Main.storyboard in Resources */,
 				BE7BF8901B85483A008CF71C /* LaunchScreen.xib in Resources */,
 				BE7BF88D1B85483A008CF71C /* Images.xcassets in Resources */,
+				BE7BF90A1B854D8B008CF71C /* External in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,9 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE7BF8AD1B854A65008CF71C /* Constants.m in Sources */,
+				BE7BF90D1B854D9B008CF71C /* NumberObject.m in Sources */,
 				BE7BF8881B85483A008CF71C /* MasterViewController.m in Sources */,
 				BE7BF8851B85483A008CF71C /* AppDelegate.m in Sources */,
 				BE7BF8AA1B854A3A008CF71C /* CustomTableViewCell.m in Sources */,
+				BE7BF9121B854E5C008CF71C /* FibonacciEngine.m in Sources */,
 				BE7BF8821B85483A008CF71C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +415,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FibonacciScroller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FibonacciScroller/External",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -395,6 +429,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FibonacciScroller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FibonacciScroller/External",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -452,6 +490,7 @@
 				BE7BF8A11B85483B008CF71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE7BF8A21B85483B008CF71C /* Build configuration list for PBXNativeTarget "FibonacciScrollerTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +499,7 @@
 				BE7BF8A41B85483B008CF71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
